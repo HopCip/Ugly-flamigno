@@ -1,0 +1,1296 @@
+*,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+    padding: 0 4rem;
+}
+
+/* NAVBAR */
+
+nav {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+.zoznam-navbar {
+    display: flex;
+    gap: 7rem;
+    list-style: none;
+}
+
+.polozka-navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.polozka-navbar a:hover {
+    transition: color 300ms ease;
+    color: #ff1083;
+}
+
+#logo {
+    width: 106px;
+    border-radius: 50%;
+}
+
+/* MAIN */
+
+.description {
+    margin: 10rem 0 4rem 0;
+    text-align: center;
+}
+
+.description-p {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 9rem;
+    margin: 0.5rem 0 2rem 0;
+}
+
+.colored-span {
+    color: #ff1083;
+}
+
+.description-p2 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.btn {
+    min-width: 200px;
+    padding: 1.5rem 6rem;
+    font-size: 1.2rem;
+    transition: transform 0.5s ease, background-color 800ms ease;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.btn.one {
+    background: linear-gradient(90deg, #f4377b, #ba30fb);
+    color: white;
+}
+
+.btn.one:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(90deg, #ba30fb, #f4377b);
+    color: white;
+    border: 1px solid transparent;
+}
+
+.btn.two {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.btn.two:hover {
+    transform: translateY(-5px);
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+}
+
+.events-div {
+    text-align: center;
+    margin-top: 15rem;
+}
+
+.akcie {
+    font-size: 2rem;
+}
+
+.udalosti {
+    font-size: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.empty {
+    color: black;
+    text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+}
+
+/* ASIDE */
+
+aside {
+    display: flex;
+    gap: 1rem;
+}
+
+.events {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    margin: 0 auto;
+}
+
+.event {
+    border: 1px solid white;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.event:hover {
+    transform: scale(1.02);
+    transition: transform 0.8s ease;
+}
+
+.event-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100%;
+    background-position: center center;
+}
+
+.event-text {
+    padding: 1rem;
+}
+
+.event-date {
+    font-size: 2rem;
+}
+
+.event-dj {
+    font-size: 2rem;
+}
+
+.event-description {
+    font-size: 1rem;
+}
+
+/* LISTOK */
+
+.listok {
+    margin: 5rem 0;
+    text-align: center;
+}
+
+.listok-header {
+    margin: 10rem 0 5rem 0;
+}
+
+.napoje {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.napojde-nadpis {
+    font-size: 3rem;
+}
+
+.alkoholicke,
+.nealkoholicke {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.alkoholicke h4,
+.nealkoholicke h4 {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.napoje-zoznam {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.napoje-polozka {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.cena {
+    color: #ff1083;
+}
+
+/* FOTKY */
+
+.fotky-nadpis {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.photo {
+    flex-grow: 1;
+    flex-basis: calc(33.33% - 20px);
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.photo img:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 0;
+}
+
+.footer-address {
+    font-size: 1.2rem;
+}
+
+.footer-header {
+    font-size: 2rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.social-icon:hover path {
+    fill: #ff1083;
+}
+
+/* MODAL WINDOW */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.modal-content {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+.btns-div {
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+}
+
+.prev:hover,
+.next:hover {
+    color: #ba30fb;
+}
+
+@media (min-width: 2500px) {
+    body {
+        padding: 0 4rem;
+        /* background: lightcoral; */
+    }
+
+    /* NAV QUERIES */
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    .polozka-navbar a {
+        font-size: 2.8rem;
+    }
+
+    .zoznam-navbar {
+        gap: 11rem;
+    }
+
+    #logo {
+        width: 136px;
+    }
+
+    /* MAIN QUERIES */
+
+
+    .description-p {
+        font-size: 4rem;
+    }
+
+    h1 {
+        font-size: 12rem;
+        margin: 1rem 0 2rem 0;
+    }
+
+    .description-p2 {
+        font-size: 3rem;
+    }
+
+    .button-div {
+        gap: 2rem;
+    }
+
+    .btn {
+        padding: 3rem 12rem;
+        font-size: 3rem;
+    }
+
+    .events-div {
+        margin-top: 10rem;
+    }
+
+    .akcie {
+        font-size: 4rem;
+    }
+
+    .udalosti {
+        font-size: 7rem;
+    }
+
+    /* ASIDE QUERIES */
+
+    .events {
+        gap: 2rem;
+    }
+
+    */ .event-date {
+        font-size: 4rem;
+    }
+
+    .event-dj {
+        font-size: 4rem;
+    }
+
+    .event-description {
+        font-size: 2.5rem;
+    }
+
+    /* LISTOK QUERIES */
+
+    .listok-header {
+        margin: 7rem 0 5rem 0;
+    }
+
+    .napoje {
+        gap: 5rem;
+    }
+
+    .napojde-nadpis {
+        font-size: 4rem;
+    }
+
+
+    .napoje-polozka {
+        font-size: 3rem;
+    }
+
+    /* FOOTER QUERIES*/
+
+    footer {
+        padding: 2.5rem 0;
+    }
+
+    .footer-address {
+        font-size: 2rem;
+    }
+
+    .footer-header {
+        font-size: 3rem;
+    }
+
+    .social-icon svg {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+/* MEDIA QUERIES MAX 2500px */
+
+@media (max-width: 2500px) {
+
+    /* body {
+        background: lightblue;
+    } */
+
+    /* NAV QUERIES */
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .polozka-navbar a {
+        font-size: 2.2rem;
+    }
+
+    .zoznam-navbar {
+        gap: 9rem;
+    }
+
+    #logo {
+        width: 118px;
+    }
+
+    /* MAIN QUERIES */
+
+
+    .description-p {
+        font-size: 4rem;
+    }
+
+    h1 {
+        font-size: 12rem;
+        margin: 1rem 0 2rem 0;
+    }
+
+    .description-p2 {
+        font-size: 3rem;
+    }
+
+    .button-div {
+        gap: 2rem;
+    }
+
+    .btn {
+        padding: 3rem 12rem;
+        font-size: 3rem;
+    }
+
+    .events-div {
+        margin-top: 10rem;
+    }
+
+    .akcie {
+        font-size: 4rem;
+    }
+
+    .udalosti {
+        font-size: 7rem;
+    }
+
+    /* ASIDE QUERIES */
+
+    .events {
+        gap: 2rem;
+    }
+
+    */ .event-date {
+        font-size: 4rem;
+    }
+
+    .event-dj {
+        font-size: 4rem;
+    }
+
+    .event-description {
+        font-size: 2.5rem;
+    }
+
+    /* LISTOK QUERIES */
+
+    .listok-header {
+        margin: 7rem 0 5rem 0;
+    }
+
+    .napoje {
+        gap: 5rem;
+    }
+
+    .napojde-nadpis {
+        font-size: 4rem;
+    }
+
+
+    .napoje-polozka {
+        font-size: 3rem;
+    }
+
+    /* FOOTER QUERIES*/
+
+    footer {
+        padding: 2.5rem 0;
+    }
+
+    .footer-address {
+        font-size: 2rem;
+    }
+
+    .footer-header {
+        font-size: 3rem;
+    }
+
+    .social-icon svg {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+
+/* MEDIA QUERIES MAX 1800px */
+
+
+@media (max-width: 1800px) {
+    /* body {
+        background: lightgreen;
+    } */
+
+    /* NAV QUERIES */
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .polozka-navbar a {
+        font-size: 1.5rem;
+    }
+
+    .zoznam-navbar {
+        gap: 7rem;
+    }
+
+    #logo {
+        width: 76px;
+    }
+
+    /* MAIN QUERIES */
+
+
+    .description-p {
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        font-size: 7rem;
+        margin: 1rem 0 2rem 0;
+    }
+
+    .description-p2 {
+        font-size: 1.8rem;
+    }
+
+    .button-div {
+        gap: 2rem;
+    }
+
+    .btn {
+        padding: 1.5rem 7rem;
+        font-size: 1.5rem;
+    }
+
+    .events-div {
+        margin-top: 8rem;
+    }
+
+    .akcie {
+        font-size: 2rem;
+    }
+
+    .udalosti {
+        font-size: 3.5rem;
+    }
+
+    /* ASIDE QUERIES */
+
+    .events {
+        gap: 2rem;
+    }
+
+
+    .event-date {
+        font-size: 3rem;
+    }
+
+    .event-dj {
+        font-size: 3rem;
+    }
+
+    .event-description {
+        font-size: 1.8rem;
+    }
+
+    /* LISTOK QUERIES */
+
+    .listok-header {
+        margin: 7rem 0 5rem 0;
+    }
+
+    .napoje {
+        gap: 5rem;
+    }
+
+    .napojde-nadpis {
+        font-size: 2rem;
+    }
+
+
+    .napoje-polozka {
+        font-size: 1.8rem;
+    }
+
+    /* FOOTER QUERIES*/
+
+    footer {
+        padding: 2.5rem 0;
+    }
+
+    .footer-address {
+        font-size: 1.5rem;
+    }
+
+    .footer-header {
+        font-size: 2rem;
+    }
+
+    .social-icon svg {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* MEDIA QUERIES MAX 1480px */
+
+@media (max-width: 1480px) {
+
+    /* body {
+            background: lightgrey;
+        } */
+
+    /* NAV QUERIES */
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .polozka-navbar a {
+        font-size: 1.2rem;
+    }
+
+    .zoznam-navbar {
+        gap: 5rem;
+    }
+
+    #logo {
+        width: 64px;
+    }
+
+    /* ASIDE QUERIES */
+
+    .events {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin: 0 auto;
+    }
+
+    .event {
+        border: 1px solid white;
+        flex-grow: 1;
+        overflow: hidden;
+    }
+
+    /* MAIN QUERIES */
+
+    .description-p {
+        font-size: 1.8rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+        margin: 1rem 0 2rem 0;
+    }
+
+    .description-p2 {
+        font-size: 1.6rem;
+    }
+
+    .button-div {
+        gap: 2rem;
+    }
+
+    .btn {
+        padding: 1.3rem 6rem;
+        font-size: 1.3rem;
+
+    }
+
+    .akcie {
+        font-size: 1.8rem;
+    }
+
+    .udalosti {
+        font-size: 3rem;
+    }
+
+    /* ASIDE QUERIES */
+
+    .events {
+        gap: 2rem;
+    }
+
+
+    .event-date {
+        font-size: 2rem;
+    }
+
+    .event-dj {
+        font-size: 2rem;
+    }
+
+    .event-description {
+        font-size: 1.2rem;
+    }
+
+    /* LISTOK QUERIES */
+
+    .listok-header {
+        margin: 7rem 0 5rem 0;
+    }
+
+    .napoje {
+        gap: 5rem;
+    }
+
+    .napojde-nadpis {
+        font-size: 2rem;
+    }
+
+
+    .napoje-polozka {
+        font-size: 1.6rem;
+    }
+
+    /* FOOTER QUERIES*/
+
+    footer {
+        padding: 2.5rem 0;
+    }
+
+    .footer-address {
+        font-size: 1.3rem;
+    }
+
+    .footer-header {
+        font-size: 1.8rem;
+    }
+
+    .social-icon svg {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+
+/* MEDIA QUERIES 1250px */
+
+@media (max-width: 1250px) {
+    /* body {
+            background: lightpink;
+        } */
+
+    /* NAVBAR QUERIES */
+
+    .polozka-navbar a {
+        display: none;
+    }
+
+    /* ASIDE QUERIES */
+
+    .events {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin: 0 auto;
+    }
+
+    .event {
+        border: 1px solid white;
+        flex-grow: 1;
+        overflow: hidden;
+    }
+
+    /* MAIN QUERIES */
+
+    .description {
+        margin: 6rem 0 3rem 0;
+    }
+
+    .description-p {
+        font-size: 1.8rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+        margin: 1rem 0 2rem 0;
+    }
+
+    .description-p2 {
+        font-size: 1.6rem;
+    }
+
+    .button-div {
+        gap: 2rem;
+    }
+
+    .btn {
+        padding: 1.1rem 5rem;
+        font-size: 1.1rem;
+    }
+
+    .akcie {
+        font-size: 1.6rem;
+    }
+
+    .udalosti {
+        font-size: 2.8rem;
+    }
+
+    /* ASIDE QUERIES */
+
+    .events-div {
+        margin-top: 5.5rem;
+    }
+
+    .events {
+        gap: 2rem;
+    }
+
+
+    .event-date {
+        font-size: 1.8rem;
+    }
+
+    .event-dj {
+        font-size: 1.8rem;
+    }
+
+    .event-description {
+        font-size: 1rem;
+    }
+
+    /* LISTOK QUERIES */
+
+    .listok-header {
+        margin: 7rem 0 5rem 0;
+    }
+
+    .napoje {
+        gap: 4rem;
+    }
+
+    .napojde-nadpis {
+        font-size: 1.6rem;
+    }
+
+
+    .napoje-polozka {
+        font-size: 1.2rem;
+    }
+
+    /* FOOTER QUERIES*/
+
+    footer {
+        padding: 2.5rem 0;
+    }
+
+    .footer-address {
+        font-size: 1.1rem;
+    }
+
+    .footer-header {
+        font-size: 1.5rem;
+    }
+
+    .social-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    /* FOOTER QUERIES*/
+
+    footer {
+        padding: 2.5rem 0;
+    }
+
+    .footer-address {
+        font-size: 1.2rem;
+    }
+
+    .footer-header {
+        font-size: 2rem;
+    }
+
+    .social-icon svg {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+
+.events {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    margin: 0 auto;
+}
+
+.event {
+    border: 1px solid white;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+
+/* MEDIA QUERIES 876 */
+
+@media (max-width: 876px) {
+    body {
+        padding: 0 2rem;
+        /* background: lightblue; */
+    }
+
+    nav {
+        padding-top: 1rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .zoznam-navbar {
+        display: none;
+    }
+
+    #logo {
+        width: 42px;
+        border-radius: 50%;
+    }
+
+    .description {
+        margin: 5rem 0 2rem 0;
+    }
+
+    .description-p {
+        font-size: 1.6rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin: 0.5rem 0 0.3rem 0;
+    }
+
+    .description-p2 {
+        font-size: 1.5rem;
+    }
+
+    .button-div {
+        gap: 1rem;
+    }
+
+
+    .btn {
+        padding: 1rem 4rem;
+        font-size: 1rem;
+    }
+
+    /* ASIDE QUERIES */
+
+    .events-div {
+        margin-top: 5rem;
+    }
+
+    .events {
+        gap: 2rem;
+    }
+
+    .event-date {
+        font-size: 1.4rem;
+    }
+
+    .event-dj {
+        font-size: 1.4rem;
+    }
+
+    .event-description {
+        font-size: 1rem;
+    }
+
+    .akcie {
+        font-size: 1.5rem;
+    }
+
+    .udalosti {
+        font-size: 2.5rem;
+    }
+
+    /* LISTOK QUERIES */
+
+    .listok {
+        margin: 2rem 0;
+    }
+
+    .listok-header {
+        margin: 3rem 0;
+    }
+
+    .napoje {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .napojde-nadpis {
+        font-size: 1.3rem;
+        text-align: left;
+    }
+
+    .napoje-polozka {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-address {
+        font-size: 0.9rem;
+    }
+
+    .footer-header {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .social-icon svg {
+        gap: 1rem;
+        width: 24px;
+        height: 24px;
+        margin-top: 1rem;
+    }
+}
+
+/* MEDIA QUERIES 564 */
+
+@media (max-width: 564px) {
+    body {
+        /* background: lightgrey; */
+        padding: 0 1rem;
+    }
+
+    /* NAV QUERIES */
+
+    nav {
+        padding-top: 1rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .zoznam-navbar {
+        display: none;
+    }
+
+    #logo {
+        width: 36px;
+        border-radius: 50%;
+    }
+
+    /* MAIN QUERIES */
+
+    .description {
+        margin: 4rem 0 2rem 0;
+    }
+
+    .description-p {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+        margin: 0.5rem 0 0.7rem 0;
+    }
+
+    .description-p2 {
+        font-size: 1rem;
+    }
+
+    .button-div {
+        display: flex;
+    }
+
+    .button-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+
+    .btn {
+        padding: 1rem 4rem;
+        font-size: 1rem;
+    }
+
+    /* ASIDE QUERIES */
+
+    .events-div {
+        margin-top: 3rem;
+    }
+
+    .events {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin: 0 auto;
+    }
+
+    .event-text {
+        padding: 1.3rem;
+    }
+
+    .event-date {
+        font-size: 1.2rem;
+    }
+
+    .event-dj {
+        font-size: 1.2rem;
+    }
+
+    .event-description {
+        font-size: 1rem;
+    }
+
+    .akcie {
+        font-size: 1.5rem;
+    }
+
+    .udalosti {
+        font-size: 1.8rem;
+    }
+
+    /* LISTOK QUERIES */
+
+
+    .listok {
+        margin: 2rem 0;
+    }
+
+    .listok-header {
+        margin: 3rem 0;
+    }
+
+    .napoje {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .napojde-nadpis {
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    .napoje-polozka {
+        font-size: 1rem;
+    }
+
+    /* FOOTER QUERIES */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-address {
+        font-size: 0.9rem;
+    }
+
+    .footer-header {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .social-icon svg {
+        gap: 1rem;
+        width: 24px;
+        height: 24px;
+        margin-top: 1rem;
+    }
+
+}
